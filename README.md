@@ -1,5 +1,7 @@
 # api-cli :computer:
 
+[![GitHub release](https://img.shields.io/github/release/prkhrv/api-cli.svg)](https://GitHub.com/prkhrv/api-cli/releases/)
+
 A CLI tool Which writes all the boiler-plate API and install Dependencies ```Express body-parser```  and Selected ORM which can be selected from the list.
 
 ## ORM SUPPORT
