@@ -1,6 +1,6 @@
 {
   "name": "@prkhrv/api-cli",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "A CLI to Fasten up the Process of API-creation",
   "main": "src/index.js",
   "bin": {
@@ -8,10 +8,15 @@
     "api-cli": "bin/api-cli"
   },
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "publishConfig": { "registry": "https://npm.pkg.github.com/" }
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prkhrv/api-cli.git"
   },
   "keywords": [
     "cli",
@@ -26,6 +31,10 @@
   ],
   "author": "Prakhar Varshney",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/prkhrv/api-cli/issues"
+  },
+  "homepage": "https://github.com/prkhrv/api-cli#readme",
   "dependencies": {
     "arg": "^4.1.3",
     "chalk": "^4.1.0",
