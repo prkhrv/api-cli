@@ -1,0 +1,40 @@
+{
+  "name": "@prkhrv/api-cli",
+  "version": "1.0.0",
+  "description": "A CLI to Fasten up the Process of API-creation",
+  "main": "src/index.js",
+  "bin": {
+    "@prkhrv/api-cli": "bin/api-cli",
+    "api-cli": "bin/api-cli"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "cli",
+    "mongoose",
+    "api",
+    "express"
+  ],
+  "files": [
+    "bin/",
+    "src/",
+    "templates/"
+  ],
+  "author": "Prakhar Varshney",
+  "license": "ISC",
+  "dependencies": {
+    "arg": "^4.1.3",
+    "chalk": "^4.1.0",
+    "esm": "^3.2.25",
+    "execa": "^4.0.3",
+    "figlet": "^1.5.0",
+    "inquirer": "^7.3.3",
+    "listr": "^0.14.3",
+    "ncp": "^2.0.0",
+    "pkg-install": "^1.0.0"
+  }
+}
