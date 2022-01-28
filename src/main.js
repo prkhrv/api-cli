@@ -11,6 +11,8 @@ import figlet from 'figlet';
 const access = promisify(fs.access);
 const copy = promisify(ncp);
 
+const platform = process.platform;
+
 //Welcome
 async function greetUser(){
     console.log(chalk.yellowBright(figlet.textSync('prkhrv')));
@@ -40,11 +42,15 @@ export async function createProject(options) {
  };
 
  const currentFileUrl = import.meta.url;
- const templateDir = path.resolve(
+ var templateDir = path.resolve(
    new URL(currentFileUrl).pathname,
    '../../templates',
    options.template.toLowerCase()
  );
+
+ if (platform == 'win32'){
+   templateDir = templateDir.slice(3);
+ }
  options.templateDirectory = templateDir;
 
  try {
